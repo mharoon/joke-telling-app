@@ -2,7 +2,7 @@ package com.jokes;
 
 import java.util.Random;
 
-public class Jokery {
+public class JokeBucket {
 
     private Random random = new Random();
 
