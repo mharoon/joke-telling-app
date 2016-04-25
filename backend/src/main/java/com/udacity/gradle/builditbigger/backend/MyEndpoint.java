@@ -9,7 +9,7 @@ package com.udacity.gradle.builditbigger.backend;
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
-import com.jokes.Joker;
+import com.jokes.Jokery;
 
 /**
  * An endpoint class we are exposing
@@ -31,8 +31,8 @@ public class MyEndpoint {
     @ApiMethod(name = "tellJoke")
     public MyBean tellJoke() {
         MyBean response = new MyBean();
-        Joker joker = new Joker();
-        response.setData(joker.getJoke());
+        Jokery jokery = new Jokery();
+        response.setData(jokery.getJoke());
 
         return response;
     }
